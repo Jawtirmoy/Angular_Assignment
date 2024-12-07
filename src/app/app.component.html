@@ -1,3 +1,36 @@
+<style>
+  /* Style for the navigation bar */
+  nav {
+    background-color: #333; /* Dark background */
+    padding: 10px 20px; /* Add some padding */
+    display: flex; /* Align items horizontally */
+    justify-content: space-around; /* Evenly space the links */
+    align-items: center; /* Center the links vertically */
+  }
+
+  /* Style for links in the nav bar */
+  nav a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Make text bold */
+    padding: 10px 15px; /* Add padding for clickable area */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+
+  /* Hover effect for links */
+  nav a:hover {
+    background-color: #575757; /* Slightly lighter background */
+  }
+
+  /* Active link style */
+  nav a.active {
+    background-color: #007bff; /* Highlight active link */
+    color: white; /* Ensure text color is readable */
+  }
+</style>
+
 <nav>
   <a routerLink="/" routerLinkActive="active">Home</a>
   <a routerLink="/api-data" routerLinkActive="active">API Data</a>
